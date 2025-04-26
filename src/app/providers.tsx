@@ -11,10 +11,10 @@ import { getConfig } from "./config";
 
 type Props = {
   children: ReactNode;
-  initialState: State | undefined;
+  initialState?: State | undefined;
 };
 
-export function Providers({ children, initialState }: Props) {
+export function Providers({ children, initialState }: Props) {...}
   const [config] = useState(() => getConfig());
   const [queryClient] = useState(() => new QueryClient());
 
