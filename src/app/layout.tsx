@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
-        <Providers>
+        <Providers initialState={undefined}>
           <SonnerProvider />
           {children}
         </Providers>
