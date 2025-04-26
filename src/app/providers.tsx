@@ -14,7 +14,7 @@ type Props = {
   initialState?: State | undefined;
 };
 
-export function Providers({ children, initialState }: Props) {...}
+export function Providers({ children, initialState }: Props) {
   const [config] = useState(() => getConfig());
   const [queryClient] = useState(() => new QueryClient());
 
